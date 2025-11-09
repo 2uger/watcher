@@ -1,0 +1,4 @@
+A simple approach to avoid multithreaded applications for safety and simplicity on truly embedded devices where you don't have access to systemd. SysVinit can initialize processes and run them but cannot monitor them. Also, when using processes, you generally don't need to worry about synchronization, you just use IPC mechanisms to communicate.
+
+For testing just run:
+make
